@@ -48,6 +48,12 @@ body{
 
 .network{
     margin-left: 10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.network:hover{
+    transform: scale(1.3);
 }
 
 .number, .mail_description{
@@ -97,4 +103,34 @@ body{
 .menu-anchor{
     text-decoration: none;
     color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu-anchor:hover{
+    color: #7AAACE;
+}
+
+.mod{
+    font-weight: bold;
+    border: 2px solid var(--secundary);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: var(--secundary);
+    transition: transform 0.3s ease;
+}
+
+.mod:hover{
+    transform: translateY(-5px);
+    color: white;
+}
+
+.slider{
+    display: flex;
+}
+
+.phrase{
+    color: white;
+    align-items: center;
+    font-size: 30px;
 }
