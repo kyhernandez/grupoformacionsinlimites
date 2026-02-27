@@ -126,11 +126,44 @@ body{
 }
 
 .slider{
+    width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+.slider-container{
+    width: 80%;
 }
 
 .phrase{
     color: white;
-    align-items: center;
     font-size: 30px;
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icon-list{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.icon{
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.icon-description{
+    color: white;
 }
