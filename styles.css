@@ -19,8 +19,6 @@ body{
     background-color: var(--primary);
 }
 
-
-
 .contact{
     width: 100%;
     height: 40px;
@@ -136,11 +134,68 @@ body{
 
 .slider-container{
     width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-big{
+    width: 200%;
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0%);
+}
+
+.slider-img{
+    width: calc(100% / 2 - 5px);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slider-points{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.points{
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+.points.active{
+    background-color: #dd8c2f;
 }
 
 .phrase{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: white;
     font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    background: #0A335C;
+    background: linear-gradient(90deg, rgba(10, 51, 92, 1) 0%, rgba(10, 51, 92, 0.2) 51%, rgba(10, 51, 92, 0) 100%);
+}
+
+.phrase-description{
+    margin: 8px 50px;
 }
 
 .icons{
