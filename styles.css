@@ -139,19 +139,19 @@ body{
 }
 
 .slider-big{
-    width: 200%;
+    width: 400%;
     height: 300px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.9s ease-in-out;
     transform: translateX(0%);
 }
 
 .slider-img{
-    width: calc(100% / 2 - 5px);
+    width: calc(100% / 4 - 5px);
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
