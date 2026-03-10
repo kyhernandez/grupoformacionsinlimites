@@ -73,3 +73,46 @@ const sliderAutomatico = () => {
 }
 
 sliderAutomatico();
+
+let currentIndex = 0;
+let isPaused = false;
+const cards = document.querySelectorAll('.card-bachiller');
+let autoSlider = setInterval(slideNext, 4000);
+
+function updateClasses() {
+    cards.forEach((card, index) => {
+        card.classList.remove('active', 'prev', 'next', 'hidden');
+        
+        if (index === currentIndex) {
+            card.classList.add('active');
+        } else if (index === (currentIndex - 1 + cards.length) % cards.length) {
+            card.classList.add('prev');
+        } else if (index === (currentIndex + 1) % cards.length) {
+            card.classList.add('next');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+function slideNext() {
+    if (!isPaused) {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateClasses();
+    }
+}
+
+// Función para cuando el usuario pasa el mouse
+function pauseAndFocus(index) {
+    isPaused = true;
+    currentIndex = index;
+    updateClasses();
+}
+
+// Reanudar cuando el mouse sale
+document.querySelector('.slider-container-bachiller').onmouseleave = () => {
+    isPaused = false;
+};
+
+// Inicializar
+updateClasses();

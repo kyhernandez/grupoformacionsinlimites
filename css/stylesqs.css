@@ -1,0 +1,85 @@
+/* Página Quienes Somos*/
+
+.who-we-are{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.who-we-are-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/backg-who.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-who {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-image: url(/assets/banner-who.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.who-title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.who-description-box{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-style: italic;
+    margin: 60px;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.mision-container, .vision-container, .values-container{
+    width: 80%;
+    margin: 40px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.title-box{
+    margin: 20px ;
+    font-size: 30px;
+    font-style: italic;
+    color: var(--primary);
+}
+
+.subtitle-box{
+    margin: 20px;
+    font-size: 18px;
+    text-align: justify;
+    color: var(--primary);
+}
+
+.list-box{
+    margin-left: 20px;
+}
+
+.benefit-box{
+    width: 80%;
+    text-align: center;
+}
+
+.benefit-description{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--primary);
+}

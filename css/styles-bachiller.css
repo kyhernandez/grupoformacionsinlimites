@@ -1,0 +1,293 @@
+/* Pagina Bachillerato */
+
+.banner{
+    width: 100%;
+    display: flex;
+}
+
+.banner-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(221, 140, 47, 0.2);
+    background: linear-gradient(to right, 
+    rgba(221, 140, 47, 0.05) 0%, 
+    rgba(221, 140, 47, 0.6) 100%
+  )
+}
+
+.banner-bachillerato{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.bachillerato-title{
+    font-size: 40px;
+    color: var(--primary);
+    margin: 26px 90px 0px;
+}
+
+.bachillerato-subtitle{
+    color: var(--primary);
+    margin: 40px 10px 40px 90px;;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.button-information-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button-information-bachillerato{
+    padding: 15px;
+    font-weight: 500;
+    background-color: var(--secundary);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.button-information-bachillerato:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.img-banner{
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.img-banner-class {
+    width: 44%;
+    margin-top: 35px;
+}
+
+.page-container{
+    background-image: url(/assets/back-bachillerato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bachillerato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bachillerato-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-why-choose{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-why-choose{
+    color: var(--primary);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.slider-bachillerato {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container-bachiller {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.card-bachiller {
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    left: 50%;
+    top: 50%;
+    margin-left: -140px; /* Centrado exacto */
+    margin-top: -190px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-bachiller-1 {
+    background-image: url('/assets/avanza.png');
+    background-color: #0a335c;
+}
+
+.card-bachiller-2 {
+    background-image: url('/assets/flexibilidad.png');
+    background-color: #dd8c2f;
+}
+
+.card-bachiller-3 {
+    background-image: url('/assets/calidad.png');
+    background-color: #0a335c;
+}
+
+.card-bachiller-4 {
+    background-image: url('/assets/acompañar.png');
+    background-color: #dd8c2f;
+}
+
+.card-overlay {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    color: white;
+    width: 100%;
+}
+
+/* --- ESTADOS DE POSICIÓN --- */
+
+/* Al frente */
+.active {
+    transform: translateX(0) scale(1.1);
+    z-index: 10;
+    opacity: 1;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Asomada a la Izquierda */
+.prev {
+    transform: translateX(-150px) scale(0.85);
+    z-index: 5;
+    opacity: 0.6;
+}
+
+/* Asomada a la Derecha */
+.next {
+    transform: translateX(150px) scale(0.85);
+    z-index: 5;
+    opacity: 0.6;
+}
+
+/* Ocultas */
+.hidden {
+    transform: translateX(0) scale(0.5);
+    opacity: 0;
+    z-index: 0;
+}
+
+.title-card{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle-card{
+    color: white;
+    font-style: italic;
+}
+
+.requirements{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.requirements-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.requirements-title{
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary);
+    margin: 40px auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.cycles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cycle-one{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    align-items: center;
+    margin: 20px;
+}
+
+.cycle-title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: var(--secundary);
+}
+
+.cycle-subtitle, .cycle-description{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.documents-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.documents-title{
+    color: var(--secundary);
+    font-size: 30px;
+    font-style: italic;
+    margin: 40px 0;
+}
+
+.documents-subtitle, .shedule-subtitle{
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.shedule{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.shedule-title{
+    color: var(--secundary);
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
