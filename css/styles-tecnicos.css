@@ -119,14 +119,8 @@
     font-weight: 500;
     margin: 30px 20px;
     text-align: center;
+    font-family: "Bebas Neue", sans-serif;
 }
-
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 .technical-subtitle{
     color: var(--primary);
@@ -153,7 +147,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/assets/Deportivo.png);
+    background-image: url(/assets/deportivo.png);
     border-top: 8px solid var(--secundary);
 }
 
