@@ -246,7 +246,7 @@ body{
     background-color: white;
     display: flex;
     justify-content: center;
-    background-image: url("/assets/backg-who.jpg");
+    background-image: url(../assets/backg-who.jpg);
     background-size: cover;
     background-repeat: round;
 }
