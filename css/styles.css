@@ -104,6 +104,7 @@ body{
 .menu-list{
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .menu-item{

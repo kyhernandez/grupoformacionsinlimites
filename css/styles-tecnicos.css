@@ -1,7 +1,140 @@
 /* Pagina Técnicos */
+
+/* Divisiones de secciones */
+
+.division {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.division svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 43px;
+}
+
+.division .shape-fill {
+    fill: #DD8C2F;
+}
+
+.custom-shape-divider-bottom-1773422855 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1773422855 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 43px;
+}
+
+.custom-shape-divider-bottom-1773422855 .shape-fill {
+    fill: #DD8C2F;
+}
+
+.custom-shape-divider-bottom-1773423005 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1773423005 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 16px;
+}
+
+.custom-shape-divider-bottom-1773423005 .shape-fill {
+    fill: #DD8C2F;
+}
+
+.custom-shape-divider-bottom-1773423226 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1773423226 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 16px;
+}
+
+.custom-shape-divider-bottom-1773423226 .shape-fill {
+    fill: #DD8C2F;
+}
+
+.custom-shape-divider-bottom-1773423457 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1773423457 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 32px;
+}
+
+.custom-shape-divider-bottom-1773423457 .shape-fill {
+    fill: #DD8C2F;
+}
+
+.custom-shape-divider-bottom-1773423567 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1773423567 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 32px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1773423567 .shape-fill {
+    fill: #DD8C2F;
+}
+
+/* Fin divisores */
+
+
 .banner-technical{
     width: 100%;
     display: flex;
+    position: relative;
 }
 
 .banner-technical-container{
@@ -76,6 +209,7 @@
     align-items: center;
     background-image: url(../assets/back-early.png);
     border-top: 8px solid var(--secundary);
+    position: relative;
 }
 
 .technical-container{
@@ -141,6 +275,7 @@
     align-items: center;
     background-image: url(../assets/accounting.png);
     border-top: 8px solid var(--secundary);
+    position: relative;
 }
 
 .sports{
@@ -150,6 +285,7 @@
     align-items: center;
     background-image: url(../assets/ent-deportivo.png);
     border-top: 8px solid var(--secundary);
+    position: relative;
 }
 
 .ocupacional{
@@ -160,6 +296,7 @@
     background-image: url(../assets/ocupacional.png);
     border-top: 8px solid var(--secundary);
     overflow: hidden;
+    position: relative;
 }
 
 .nursing{
@@ -170,6 +307,7 @@
     background-image: url(../assets/back-nursing.png);
     border-top: 8px solid var(--secundary);
     overflow: hidden;
+    position: relative;
 }
 
 .english{
@@ -180,4 +318,5 @@
     background-image: url(../assets/back-english.png);
     border-top: 8px solid var(--secundary);
     overflow: hidden;
+    position: relative;
 }
