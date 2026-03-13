@@ -115,6 +115,7 @@ body{
     color: white;
     padding: 10px;
     display: inline-block;
+    text-align: center;
 }
 
 .menu-anchor:hover{
