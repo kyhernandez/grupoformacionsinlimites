@@ -96,6 +96,7 @@
 
 .technical-img{
     width: 300px;
+    object-fit: cover;    
 }
 
 .technical-text{

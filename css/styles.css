@@ -244,7 +244,7 @@ body{
     background-color: white;
     display: flex;
     justify-content: center;
-    background-image: url("../assets/backg-who.jpg");
+    background-image: url("/assets/backg-who.jpg");
     background-size: cover;
     background-repeat: round;
 }
@@ -266,7 +266,7 @@ body{
     margin-bottom: 10px;
 }
 
-.bachiller, .infancia, .admincontable, .deporte, .sst, .enfermeria, .ingles{
+.program{
     background-color: var(--primary);
     margin: 20px;
     border-radius: var(--radius-md);
