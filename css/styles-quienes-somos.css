@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(./assets/backg-who.jpg);
+    background-image: url(../assets/backg-who.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,7 +21,7 @@
     height: 200px;
     display: flex;
     align-items: center;
-    background-image: url(./assets/banner-who.jpg);
+    background-image: url(../assets/banner-who.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
