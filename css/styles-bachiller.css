@@ -72,7 +72,7 @@
 }
 
 .page-container{
-    background-image: url(/assets/back-bachillerato.jpg);
+    background-image: url(../assets/back-bachillerato.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -139,22 +139,22 @@
 }
 
 .card-bachiller-1 {
-    background-image: url('/assets/avanza.png');
+    background-image: url(../assets/avanza.png);
     background-color: #0a335c;
 }
 
 .card-bachiller-2 {
-    background-image: url('/assets/flexibilidad.png');
+    background-image: url(../assets/flexibilidad.png);
     background-color: #dd8c2f;
 }
 
 .card-bachiller-3 {
-    background-image: url('/assets/calidad.png');
+    background-image: url(../assets/calidad.png);
     background-color: #0a335c;
 }
 
 .card-bachiller-4 {
-    background-image: url('/assets/acompañar.png');
+    background-image: url(../assets/acompañar.png);
     background-color: #dd8c2f;
 }
 
