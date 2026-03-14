@@ -130,7 +130,7 @@
     height: 380px;
     left: 50%;
     top: 50%;
-    margin-left: -140px; /* Centrado exacto */
+    margin-left: -140px;
     margin-top: -190px;
     border-radius: 20px;
     background-size: cover;
@@ -312,4 +312,17 @@
     font-size: 30px;
     font-style: italic;
     margin-bottom: 30px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+    .cycles {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .cycles {
+        grid-template-columns: 1fr; 
+    }
 }

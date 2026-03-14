@@ -40,23 +40,76 @@
     justify-content: center;
     text-align: justify;
     font-style: italic;
-    margin: 60px;
+    margin: 50px auto 20px;
     font-size: 20px;
     color: var(--primary);
 }
 
-.mision-container, .vision-container, .values-container{
+.mision-container, .vision-container {
+    flex: 1; 
+    margin: 0; 
+    background: rgba(255, 255, 255, 0.9); /* Un fondo sutil para leer mejor */
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.mision-container:hover, .vision-container:hover {
+    transform: scale(1.02);
+}
+
+.values-container{
     width: 80%;
-    margin: 40px;
+    margin-bottom: 40px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg); 
+    color: white;
+    padding: 40px;
+    width: 100% !important; 
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    list-style: none;
+    
+}
+
+.value-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    color: var(--primary);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
+}
+
+.value-item strong {
+    display: block;
+    color: var(--secundary);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.value-item:hover{
+    transform: scale(1.02);
+}
+
+.mision-vision-wrapper {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: 40px auto;
 }
 
 .title-box{
     margin: 20px ;
     font-size: 30px;
     font-style: italic;
-    color: var(--primary);
+    color: var(--secundary);
 }
 
 .subtitle-box{
@@ -64,10 +117,6 @@
     font-size: 18px;
     text-align: justify;
     color: var(--primary);
-}
-
-.list-box{
-    margin-left: 20px;
 }
 
 .benefit-box{
