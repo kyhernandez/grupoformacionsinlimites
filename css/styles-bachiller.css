@@ -7,6 +7,8 @@
 
 .banner-container{
     width: 100%;
+    min-height: 420px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 15px rgba(221, 140, 47, 0.2);
@@ -67,8 +69,9 @@
 }
 
 .img-banner-class {
-    width: 44%;
-    margin-top: 35px;
+    width: 70%;
+    max-width: 500px;
+    object-fit: contain;
 }
 
 .page-container{
@@ -232,26 +235,47 @@
 
 .cycles{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+    justify-items: center;
+    margin-top: 30px;
 }
 
 .cycle-one{
-    display: flex;
+   display: flex;
     flex-direction: column;
-    width: 220px;
+    width: 100%;
+    max-width: 250px;
     align-items: center;
-    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+    border-bottom: 4px solid var(--secundary);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.cycle-title{
-    margin-bottom: 20px;
-    font-size: 25px;
+.cycle-one:hover {
+    transform: translateY(-10px);
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cycle-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
     color: var(--secundary);
 }
 
-.cycle-subtitle, .cycle-description{
+.cycle-subtitle {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.cycle-description{
     margin-bottom: 20px;
     font-size: 16px;
     color: var(--primary);
