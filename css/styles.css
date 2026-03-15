@@ -631,6 +631,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .footer-img{
@@ -667,7 +668,7 @@ body{
 .footer-title{
     color: var(--secundary);
     font-size: 20px;
-    margin-bottom: 20px;
+    margin: 20px 30px;
 }
 
 .footer-subtitle{
@@ -700,4 +701,84 @@ body{
 @keyframes reveal {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* DISEÑO RESPONSIVO*/
+
+@media (max-width: 768px){
+    .logo-img{
+        width: 45px;
+    }
+    .logo-description, .menu-anchor{
+        font-size: 12px;
+    }
+    
+    .phrase-description{
+        font-size: 22px;
+    }
+    .slider-big{
+        height: 240px;
+    }
+    .points{
+        width: 15px;
+        height: 15px;
+    }
+    .icon{
+        width: 50px;
+    }
+    .icons{
+        padding: 40px 0;
+    }
+    .phrase-programs, .why-title, .allies-title{
+        font-size: 35px;
+    }
+    .offer-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid{
+        grid-column: span 1;
+    }
+    .star-img{
+        width: 16px;
+    }
+    .phrase-bachiller, .subtitle-phrase, .footer-img-phrase, .footer-phrase, .contact-text{
+        font-size: 15px;
+    }
+    
+    .button-information, .button-information-why{
+        padding: 12px;
+        font-size: 18px;
+    }
+    .why-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .reasons{
+        width: 95%;
+    }
+    .reasons-phrase, .copy-description{
+        font-size: 20px;
+    }
+    .allies-card{
+        width: 180px;
+    }
+    .allies-img{
+        height: 130px;
+    }
+    .allies-img-education{
+        height: 80px;
+    }
+    .footer-img{
+        width: 80px;
+    }
+    .contact-button{
+        width: 150px;
+    }
+    .contact-icon{
+        width: 18px;
+    }
+    .contact-link{
+        padding: 12px 10px;
+    }
 }
