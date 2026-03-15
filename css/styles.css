@@ -413,6 +413,7 @@ body{
     background-color: var(--secundary);
     text-decoration: none;
     color: var(--primary);
+    font-size: 20px;
     font-weight: 500;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
@@ -498,6 +499,7 @@ body{
     text-decoration: none;
     color: var(--primary);
     font-weight: 500;
+    font-size: 20px;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
     margin-bottom: 40px;

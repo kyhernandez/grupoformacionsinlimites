@@ -48,9 +48,11 @@
 .mision-container, .vision-container {
     flex: 1; 
     margin: 0; 
-    background: rgba(255, 255, 255, 0.9); /* Un fondo sutil para leer mejor */
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     transition: transform 0.3s ease;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
 }
 
 .mision-container:hover, .vision-container:hover {
@@ -58,10 +60,7 @@
 }
 
 .values-container{
-    width: 80%;
     margin-bottom: 40px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg); 
     color: white;
     padding: 40px;
     width: 100% !important; 
@@ -73,8 +72,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 30px;
-    list-style: none;
-    
+    list-style: none;    
 }
 
 .value-item {
@@ -106,10 +104,10 @@
 }
 
 .title-box{
-    margin: 20px ;
-    font-size: 30px;
+    margin: 20px auto 50px;
+    font-size: 40px;
     font-style: italic;
-    color: var(--secundary);
+    color: var(--secundary)
 }
 
 .subtitle-box{
