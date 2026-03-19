@@ -22,10 +22,14 @@
     <section class="contact">
         <div class="container">
             <div class="contact-number">
-                <img class="wsp" src="./assets/whatsapp_icon.png" alt="">
-                <p class="number">300 3244437</p>
-                <img class="mail" src="./assets/letter_icon.png" alt="">
-                <p class="mail_description">contacto@formacionsinlimites.com</p>
+                <div class="contact-number-container">
+                    <img class="wsp" src="./assets/whatsapp_icon.png" alt="">
+                    <a href="tel:3003244437" class="number">300 3244437</a>
+                </div>
+                <div class="contact-mail-container">
+                    <img class="mail" src="./assets/letter_icon.png" alt="">
+                    <a class="mail_description" href="mailto:contacto@formacionsinlimites.com">contacto@formacionsinlimites.com</a>
+                </div>
             </div>
             <div class="contact-social">
                 <a href="https://www.facebook.com/share/1Nfvi4H3RK/?mibextid=wwXIfr" title="Facebook" target="_blank">
@@ -38,14 +42,16 @@
         </div>
     </section>
     <section class="logo-menu">
-        <div class="container">
+        <div class="logo-container">
             <div class="logo">
                 <a class="logo-home" href="index.html">
                     <img class="logo-img" src="./assets/logo.png" alt="">
                     <p class="logo-description">Grupo Formación Sin Límites</p>
                 </a>
             </div>
-            <nav class="menu">
+            <button id="abrir" class="abrir-menu-hamburguesa"><img class="bi" src="./assets/menu.png" alt=""></button>
+            <nav class="menu" id="menu">
+                <button id="cerrar" class="cerrar-menu-hamburguesa"><img class="remove" src="./assets/remove.png" alt=""></button>
                 <ul class="menu-list">
                     <li class="menu-item">
                         <a class="menu-anchor" href="index.html">Inicio</a>
@@ -316,7 +322,7 @@
             </div>
         </div>
     </section>
-   <footer>
+    <footer>
         <div class="footer">
             <div class="footer-container">
                 <div class="footer-box">
@@ -384,4 +390,5 @@
         </a>
     </div>
 </body>
+
 </html>
