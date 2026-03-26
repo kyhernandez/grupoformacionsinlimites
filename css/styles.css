@@ -29,7 +29,7 @@ body{
 }
 
 .container, .logo-container{
-    width: 80%;
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,7 +178,7 @@ body{
 }
 
 .slider-container{
-    width: 80%;
+    width: 1000px;
     overflow: hidden;
     position: relative;
 }
@@ -265,7 +265,7 @@ body{
 }
 
 .icon-list{
-    width: 70%;
+    width: 1000px;
     display: flex;
     justify-content: space-around;
 }
@@ -297,7 +297,7 @@ body{
 }
 
 .program-container{
-    width: 70%;  
+    width: 1000px;  
 }
 
 .phrase-programs, .why-title{
@@ -450,7 +450,7 @@ body{
 }
 
 .why-container {
-    width: 80%;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -535,7 +535,7 @@ body{
 }
 
 .allies-container{
-    width: 80%;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -630,7 +630,7 @@ body{
 }
 
 .footer-container{
-    width: 80%;
+    width: 1000px;
     display: flex;    
     flex-direction: column;
 }
@@ -721,7 +721,81 @@ body{
 
 /* DISEÑO RESPONSIVO*/
 
+@media screen and (max-width: 1024px){
+    .container{
+        width: 800px;
+    }
+
+    .logo-container{
+        width: 800px;
+    }
+
+    .slider-container{
+        width: 800px;
+    }
+
+    .icon-list{
+        width: 800px;
+    }
+
+    .program-container{
+        width: 800px;
+    }
+
+    .why-container{
+        width: 800px;
+    }
+
+    .allies-container{
+        width: 800px;
+    }
+
+    .footer-container{
+        width: 800px;
+    }
+
+    .footer-box{
+        justify-content: space-between;
+    }
+}
+
 @media screen and (max-width: 768px){
+    .container{
+        width: 650px;
+    }
+
+    .logo-container{
+        width: 650px;
+    }
+
+    .slider-container{
+        width: 650px;
+    }
+
+    .icon-list{
+        width: 650px;
+    }
+
+    .program-container{
+        width: 650px;
+    }
+
+    .why-container{
+        width: 650px;
+    }
+
+    .allies-container{
+        width: 650px;
+    }
+
+    .footer-container{
+        width: 650px;
+    }
+
+    .footer-box{
+        justify-content: space-between;
+    }
+
     .logo-img{
         width: 45px;
     }
@@ -953,5 +1027,12 @@ body{
 
     .reasons-phrase, .copy-description {
     font-size: 16px;
+    }
 }
+
+@media screen and (max-width: 320px){
+    .number, .mail_description {
+    font-size: 10px;
+    }
 }
+
