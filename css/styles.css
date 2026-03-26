@@ -1000,8 +1000,12 @@ body{
         font-size: 15px;
     }   
 
+    .reasons{
+        margin-left: 10px;
+    }
+
     .reason-img{
-        width: 35%;
+        width: 25%;
     }
 
     .reasons-description{
@@ -1025,6 +1029,7 @@ body{
 
     .allies-box{
         flex-wrap: wrap;
+        margin-bottom: 20px;
     }
 
     .footer-img{
