@@ -879,6 +879,10 @@ body{
         padding: 5px 0;
     }
 
+    .container, .logo-container, .slider-container, .why-container, .allies-container{
+        margin: 0px 10px;
+    }
+
     .contact-number{
         flex-wrap: wrap;
     }
@@ -915,7 +919,7 @@ body{
         position: absolute;
         top: 70px;
         right: 0;
-        padding: 2rem;
+        padding: 1rem;
         box-shadow: var(--shadow-lg);
         background: var(--primary);
         z-index: 10;
@@ -1001,6 +1005,12 @@ body{
         line-height: 20px;
     }
 
+    .allies-card{
+        width: 140px;
+        height: 100px;
+        margin: 10px 0;
+    }
+
     .allies-img {
         height: 100px;
     }
@@ -1010,7 +1020,7 @@ body{
     }
 
     .allies-box{
-        gap: 10px;
+        flex-wrap: wrap;
     }
 
     .footer-img{
@@ -1022,7 +1032,7 @@ body{
     }
     
     .footer-box{
-        gap: 10px;
+        gap: 15px;
     }
 
     .reasons-phrase, .copy-description {
@@ -1031,8 +1041,27 @@ body{
 }
 
 @media screen and (max-width: 320px){
+    
+    
     .number, .mail_description {
-    font-size: 10px;
+    font-size: 8px;
+    margin-right: 2px;
+    }
+
+    .icon{
+        width: 35px;
+    }
+
+    .icon-description{
+        font-size: 13px;
+    }
+
+    .offer-box, .why-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-box{
+        width: 160px;
     }
 }
 
