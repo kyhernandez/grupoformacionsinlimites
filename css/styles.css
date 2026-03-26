@@ -18,6 +18,8 @@ body{
     min-height: 100vh;
     background-color: white;
     position: relative;
+    inline-size: 100%;
+    overflow-x: hidden;
 }
 
 .contact{
@@ -936,14 +938,17 @@ body{
         box-shadow: var(--shadow-lg);
         background: var(--primary);
         z-index: 10;
-        transform: translateX(100%);
-        transition: all 0.4s ease-in-out;
+        transform: translateX(100%) scale(0.95);
+        transition: 
+        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+        opacity 0.4s ease,
+        visibility 0.4s;
     }
 
     .menu.visible{
         opacity: 1;
         visibility: visible;
-        transform: translateX(0);
+        transform: translateX(0) scale(1);
     }
 
     .menu-list{
