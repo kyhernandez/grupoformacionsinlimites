@@ -899,6 +899,16 @@ body{
         font-size: 12px;
     }
 
+    .logo-cerrar{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+
+    .logo-description{
+        width: 25%;
+    }
+
     .abrir-menu-hamburguesa,
     .cerrar-menu-hamburguesa {
         display: block;
@@ -908,13 +918,16 @@ body{
         cursor: pointer;
     }
 
+    .cerrar-menu-hamburguesa{
+        align-self: flex-end;
+    }
+
     .menu{
         opacity: 0;
         visibility: hidden;
-        width: 45%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: end;
         gap: 1rem;
         position: absolute;
         top: 70px;
@@ -923,16 +936,20 @@ body{
         box-shadow: var(--shadow-lg);
         background: var(--primary);
         z-index: 10;
+        transform: translateX(100%);
+        transition: all 0.4s ease-in-out;
     }
 
     .menu.visible{
         opacity: 1;
         visibility: visible;
+        transform: translateX(0);
     }
 
     .menu-list{
         flex-direction: column;
         gap: 10px;
+        align-items: flex-start;
     }
 
     .bi{
