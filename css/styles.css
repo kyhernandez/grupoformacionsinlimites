@@ -165,6 +165,7 @@ body{
     border-radius: var(--radius-md);
     background: var(--secundary);
     transition: transform 0.3s ease;
+    left: 10px;
 }
 
 .menu-anchor-mod:hover{
@@ -905,6 +906,7 @@ body{
         display: flex;
         justify-content: space-between;
         margin: 10px 0px;
+        align-self: flex-end;
     }
 
     .logo-description{
@@ -1064,7 +1066,24 @@ body{
     }
 
     .reasons-phrase, .copy-description {
-    font-size: 16px;
+        font-size: 16px;
+    }
+
+    .footer-box{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .footer-title{
+        text-align: center;
+    }
+
+    .contact-box{
+        justify-content: center;
+    }
+
+    .footer-subtitle{
+        text-align: center;
     }
 }
 
