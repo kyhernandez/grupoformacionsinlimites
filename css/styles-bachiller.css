@@ -3,6 +3,12 @@
 .banner{
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(221, 140, 47, 0.2);
+    background: linear-gradient(to right, 
+  rgba(221, 140, 47, 0.05) 0%, 
+  rgba(255, 136, 0, 0.98) 100%);
 }
 
 .banner-container{
@@ -10,11 +16,7 @@
     min-height: 420px;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(221, 140, 47, 0.2);
-    background: linear-gradient(to right, 
-  rgba(221, 140, 47, 0.05) 0%, 
-  rgba(255, 136, 0, 0.98) 100%);
+    
 }
 
 .banner-bachillerato{
@@ -315,14 +317,162 @@
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 900px) {
+
+@media screen and (max-width: 1024px){
+    /*.container, .logo-container, .banner-container, .bachillerato-container, .requirements-container, .footer-container{
+        width: 800px;
+
+    }*/
+
+    .img-banner-class{
+        width: 87%;
+    }
+
+    .logo-description{
+        font-size: 13px;
+    }
+
+    .menu-anchor{
+        font-size: 15px;
+    }
+
+    .title-why-choose {
+        font-size: 32px;
+    }
+    .slider-container-bachiller {
+        width: 60%; /* Expandimos el contenedor para dar aire */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-container{
+        width: 85%;
+        min-height: 390px;
+    }
+
+    .bachillerato-title{
+        font-size: 30px;
+        margin: 26px 70px 0px;
+    }
+
+    .bachillerato-subtitle{
+        margin:40px 10px 40px 70px;
+        font-size: 18px;
+    }
+
+    .img-banner-class{
+        width: 130%;
+    }
+
+    .title-why-choose{
+        font-size: 35px;
+    }
+
+    .title-why-choose {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    
+    .slider-bachillerato {
+        height: 450px; /* Un poco más de alto por el texto */
+    }
+
+    .card-bachiller {
+        width: 240px; /* Reducimos ligeramente el ancho */
+        height: 340px;
+        margin-left: -120px;
+        margin-top: -170px;
+    }
+
+    /* Ajustamos el desplazamiento para que no se corten */
+    .prev { transform: translateX(-100px) scale(0.8); }
+    .next { transform: translateX(100px) scale(0.8); }
+
     .cycles {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 480px) {
+
+    .bachillerato-title{
+        margin: 26px 0px 0px;
+        font-size: 20px;
+    }
+
+    .bachillerato-subtitle{
+        font-size: 15px;
+        margin: 40px 0px 40px;
+    }
+
+    .button-information-bachillerato{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .banner-container{
+        min-height: 300px;
+    }
+
+    .banner-bachillerato{
+        flex: 1;
+    }
+
+    .title-why-choose {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .slider-container-bachiller {
+        width: 80%;
+    }
+
+    .slider-bachillerato{
+        margin: 0px;
+    }
+
+    .card-bachiller {
+        width: 200px;
+        height: 300px;
+        margin-left: -100px;
+        margin-top: -150px;
+    }
+
+    /* En móviles, las tarjetas laterales deben estar más cerca del centro */
+    .prev { 
+        transform: translateX(-60px) scale(0.75); 
+        opacity: 0.4;
+    }
+    .next { 
+        transform: translateX(60px) scale(0.75); 
+        opacity: 0.4;
+    }
+    
+    .active {
+        transform: translateX(0) scale(1.05);
+    }
+
+    .title-card { font-size: 1.1rem; }
+    .subtitle-card { font-size: 0.85rem; }
+
     .cycles {
         grid-template-columns: 1fr; 
     }
+}
+
+@media (max-width: 320px) {
+    .title-why-choose {
+        font-size: 20px;
+    }
+
+    .card-bachiller {
+        width: 180px;
+        height: 280px;
+        margin-left: -90px;
+        margin-top: -140px;
+    }
+
+    /* Casi una encima de otra para que quepan */
+    .prev { transform: translateX(-40px) scale(0.7); }
+    .next { transform: translateX(40px) scale(0.7); }
 }
