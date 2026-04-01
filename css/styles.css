@@ -760,6 +760,10 @@ body{
     .footer-box{
         justify-content: space-between;
     }
+
+    .logo-description, .menu-anchor{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -803,7 +807,7 @@ body{
         width: 45px;
     }
     .logo-description, .menu-anchor{
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .phrase-description{
@@ -899,7 +903,7 @@ body{
         margin-right: 5px;
     }
     .number, .mail_description{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .logo-cerrar{
@@ -1091,7 +1095,7 @@ body{
     
     
     .number, .mail_description {
-    font-size: 8px;
+    font-size: 9px;
     margin-right: 2px;
     }
 
