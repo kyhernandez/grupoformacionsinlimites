@@ -289,6 +289,7 @@
     margin: 30px 20px 0px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .technical-box-description{
@@ -418,7 +419,7 @@
 
     .technical-title{
         margin: 10px;
-        font-size: 30px;
+        font-size: 29px;
     }
 
     .technical-container{
@@ -428,5 +429,42 @@
 
     .technical-subtitle{
         margin: 10px;
+    }
+
+    .technical-desc-subtitle{
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .banner-technical-title{
+        margin: 20px 15px 0px;
+        font-size: 27px;
+    }
+    .banner-img-container-technical{
+        max-width: 220px;
+    }
+
+    .banner-technical-subtitle{
+        font-size: 16px;
+        margin: 20px 30px;
+    }
+
+    .button-information-technical{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .technical-title{
+        margin: 0px;
+        font-size: 25px;
+    }
+    .technical-subtitle{
+        margin: 10px 0px;
+        font-size: 15px;
+    }
+
+    .technical-desc-subtitle{
+        font-size: 15px;
     }
 }
