@@ -1,6 +1,8 @@
 :root{
     --primary: #0a335c;
     --secundary: #dd8c2f;
+    --radius-button: 50px; 
+    --shadow-button: 0 4px 15px rgba(0,0,0,0.2);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px 5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --radius-md: 0.5rem;
@@ -434,8 +436,8 @@ body{
     color: var(--primary);
     font-size: 20px;
     font-weight: 500;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-button);
+    box-shadow: var(--shadow-button);
     margin-bottom: 40px;
     transition: transform 0.3s ease;
 }
@@ -519,8 +521,8 @@ body{
     color: var(--primary);
     font-weight: 500;
     font-size: 20px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-button);
+    box-shadow: var(--shadow-button);
     margin-bottom: 40px;
     transition: transform 0.3s ease;
 }
@@ -844,7 +846,7 @@ body{
     
     .button-information, .button-information-why{
         padding: 12px;
-        font-size: 18px;
+        font-size: 17px;
     }
     .why-box{
         display: grid;
