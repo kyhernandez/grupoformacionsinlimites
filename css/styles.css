@@ -885,7 +885,7 @@ body{
 @media screen and (max-width: 480px){
 
     .contact{
-        padding: 5px 0;
+        padding: 5px;
     }
 
     .container, .logo-container, .slider-container, .why-container, .allies-container{
