@@ -1092,8 +1092,6 @@ body{
 }
 
 @media screen and (max-width: 320px){
-    
-    
     .number, .mail_description {
     font-size: 9px;
     margin-right: 2px;

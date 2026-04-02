@@ -163,6 +163,7 @@
 
    .subtitle-box{
         font-size: 16px;
+        margin: 0px;
    }
 
    .values-grid{
@@ -202,6 +203,20 @@
 
     .values-grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+     .banner-who{
+        height: 130px;
+    }
+    
+    .who-title{
+        font-size: 25px;
+    }
+
+    .benefit-description{
+        font-size: 18px;
     }
 }
 
