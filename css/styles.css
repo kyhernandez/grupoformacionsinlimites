@@ -30,6 +30,7 @@ body{
     background-color: var(--secundary);    
     display: flex;
     justify-content: center;
+    padding: 5px 10px;
 }
 
 .container, .logo-container{
@@ -199,13 +200,13 @@ body{
     font-size: 2rem;
     padding: 10px 15px;
     cursor: pointer;
-    z-index: 10; 
+    z-index: 10; /* Para que estén por encima de la imagen y el gradiente */
     border-radius: 5px;
     transition: background 0.3s;
 }
 
 .arrow-btn:hover {
-    background-color: var(--primary);
+    background-color: var(--primary); /* O el color que prefieras */
 }
 
 .prev {
@@ -214,6 +215,11 @@ body{
 
 .next {
     right: 10px;
+}
+
+/* Asegura que el contenedor tenga posición relativa para las flechas */
+.slider-container {
+    position: relative;
 }
 
 .slider-container::after {
@@ -764,7 +770,7 @@ body{
     }
 
     .slider-container{
-        width: 800px;
+        width: 95%;
     }
 
     .icon-list{
@@ -793,9 +799,6 @@ body{
 
     .logo-description, .menu-anchor{
         font-size: 14px;
-    }
-    .slider-container {
-        width: 95%; 
     }
 }
 
@@ -921,11 +924,6 @@ body{
 
     .contact-number{
         flex-wrap: wrap;
-        margin-left: 20px;
-    }
-
-    .contact-social{
-        margin-right: 20px;
     }
 
     .contact-number-container, .contact-mail-container{
@@ -1033,17 +1031,6 @@ body{
         margin: 35px auto 10px;
     }
 
-    .arrow-btn {
-        padding: 8px 10px;
-        font-size: 1.5rem; 
-    }
-
-    .points {
-        width: 12px;
-        height: 12px;
-        margin: 8px;    
-    }
-
     .program-container {
         width: 100%;
     }
@@ -1054,6 +1041,21 @@ body{
 
     .phrase-bachiller, .subtitle-phrase, .footer-img-phrase, .footer-phrase, .contact-text, .footer-subtitle{
        font-size: 12px;
+    }
+
+    .phrase-description {
+        font-size: 1.2rem; 
+    }
+
+    .arrow-btn {
+        padding: 8px 10px;
+        font-size: 1.5rem; 
+    }
+
+    .points {
+        width: 12px;
+        height: 12px;
+        margin: 8px; 
     }
 
     .offer-box, .why-box{
