@@ -891,6 +891,11 @@ body{
 
     .contact-number{
         flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .contact-social{
+        margin-right: 20px;
     }
 
     .contact-number-container, .contact-mail-container{
