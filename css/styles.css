@@ -30,6 +30,7 @@ body{
     background-color: var(--secundary);    
     display: flex;
     justify-content: center;
+    padding: 5px 10px;
 }
 
 .container, .logo-container{
@@ -883,10 +884,6 @@ body{
 }
 
 @media screen and (max-width: 480px){
-
-    .contact{
-        padding: 5px 10px;
-    }
 
     .container, .logo-container, .slider-container, .why-container, .allies-container{
         margin: 0px 15px;
