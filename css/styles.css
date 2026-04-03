@@ -200,13 +200,13 @@ body{
     font-size: 2rem;
     padding: 10px 15px;
     cursor: pointer;
-    z-index: 10; /* Para que estén por encima de la imagen y el gradiente */
+    z-index: 10; 
     border-radius: 5px;
     transition: background 0.3s;
 }
 
 .arrow-btn:hover {
-    background-color: var(--primary); /* O el color que prefieras */
+    background-color: var(--primary); 
 }
 
 .prev {
@@ -215,11 +215,6 @@ body{
 
 .next {
     right: 10px;
-}
-
-/* Asegura que el contenedor tenga posición relativa para las flechas */
-.slider-container {
-    position: relative;
 }
 
 .slider-container::after {
@@ -975,7 +970,7 @@ body{
         padding: 1rem;
         box-shadow: var(--shadow-lg);
         background: var(--primary);
-        z-index: 10;
+        z-index: 100;
         transform: translateY(-10px);
         transition: all 0.4s ease-in-out;
     }
