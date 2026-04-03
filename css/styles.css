@@ -30,7 +30,6 @@ body{
     background-color: var(--secundary);    
     display: flex;
     justify-content: center;
-    padding: 5px 10px;
 }
 
 .container, .logo-container{
