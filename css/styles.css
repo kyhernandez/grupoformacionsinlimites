@@ -42,7 +42,6 @@ body{
 .contact-number{
     display: flex;
     align-items: center;
-    margin-left: 20px;
 }
 
 .contact-number-container, .contact-mail-container{
@@ -60,7 +59,6 @@ body{
 
 .contact-social{
     display: flex;
-    margin-right: 20px;
 }
 
 .network{
@@ -896,6 +894,11 @@ body{
 
     .contact-number{
         flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .contact-social{
+        margin-right: 20px;
     }
 
     .contact-number-container, .contact-mail-container{
