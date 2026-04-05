@@ -1219,3 +1219,11 @@ body {
     }
 }
 
+@media screen and (max-width: 390px) {
+
+    .number,
+    .mail_description {
+        font-size: 10px;
+        margin-right: 0px;
+    }
+}
