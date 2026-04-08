@@ -89,6 +89,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .bachillerato-container{
@@ -494,19 +495,46 @@
     
     .title-why-choose {
         font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .slider-bachillerato{
+        height: 380px;
     }
 
     .card-bachiller {
         width: 180px;
         height: 280px;
-        margin-left: -90px;
-        margin-top: -140px;
     }
 
-    .prev { transform: translateX(-40px) scale(0.7); }
-    .next { transform: translateX(40px) scale(0.7); }
+    .prev { 
+        transform: translate(-95%, -50%) scale(0.7);
+        opacity: 0.1;
+    }
+    .next { 
+        transform: translate(-5%, -50%) scale(0.7); 
+        opacity: 0.1;
+    }
+    .active {
+        transform: translate(-50%, -50%) scale(1.05);
+        z-index: 20;
+    }
+
+    .title-card { 
+        font-size: 0.95rem; 
+        margin-bottom: 5px;
+    }
+    .subtitle-card { 
+        font-size: 0.75rem; 
+        line-height: 1.2;
+    }
+
+    .card-overlay {
+        padding: 10px; 
+    }
+
+    .requirements-title{
+        margin: 0px auto;
+    }
 }
 
-.requirements-title{
-    margin: 0px auto;
-}
