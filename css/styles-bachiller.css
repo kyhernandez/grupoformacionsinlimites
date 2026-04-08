@@ -124,8 +124,8 @@
 
 .slider-container-bachiller {
     position: relative;
-    width: 43%;
-    height: 82%;
+    width: 600px;
+    height: 400px;
     transform-style: preserve-3d;
 }
 
@@ -133,10 +133,10 @@
     position: absolute;
     width: 280px;
     height: 380px;
-    left: 50%;
-    top: 50%;
-    margin-left: -140px;
-    margin-top: -190px;
+    left: 50% !important;
+    top: 50% !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -178,7 +178,7 @@
 
 /* Al frente */
 .active {
-    transform: translateX(0) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1) !important;
     z-index: 10;
     opacity: 1;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -186,14 +186,14 @@
 
 /* Asomada a la Izquierda */
 .prev {
-    transform: translateX(-150px) scale(0.85);
+    transform: translate(calc(-50% - 150px), -50%) scale(0.85) !important;
     z-index: 5;
     opacity: 0.6;
 }
 
 /* Asomada a la Derecha */
 .next {
-    transform: translateX(150px) scale(0.85);
+    transform: translate(calc(-50% + 150px), -50%) scale(0.85) !important;
     z-index: 5;
     opacity: 0.6;
 }
@@ -342,7 +342,17 @@
         font-size: 32px;
     }
     .slider-container-bachiller {
-        width: 60%; 
+        width: 100%; 
+    }
+    .card-bachiller {
+        width: 250px; /* Reducimos un poco el ancho */
+        height: 350px;
+    }
+    .prev {
+        transform: translate(-120%, -50%) scale(0.85); 
+    }
+    .next { 
+        transform: translate(20%, -50%) scale(0.85); 
     }
 }
 
@@ -381,20 +391,25 @@
     }
     
     .slider-bachillerato {
-        height: 450px; /* Un poco más de alto por el texto */
+        height: 420px; /* Un poco más de alto por el texto */
     }
 
     .card-bachiller {
-        width: 240px; /* Reducimos ligeramente el ancho */
-        height: 340px;
-        margin-left: -120px;
-        margin-top: -170px;
+        width: 220px; /* Reducimos ligeramente el ancho */
+        height: 320px;
     }
 
-    /* Ajustamos el desplazamiento para que no se corten */
-    .prev { transform: translateX(-100px) scale(0.8); }
-    .next { transform: translateX(100px) scale(0.8); }
-
+    .prev { 
+        transform: translate(-110%, -50%) scale(0.8); opacity: 0.4; 
+    }
+    .next { 
+        transform: translate(10%, -50%) scale(0.8); opacity: 0.4; 
+    }
+    
+    .active { 
+        transform: translate(-50%, -50%) scale(1.05); 
+    }
+    
     .cycles {
         grid-template-columns: repeat(2, 1fr); 
     }
@@ -439,25 +454,29 @@
     .card-bachiller {
         width: 200px;
         height: 300px;
-        margin-left: -100px;
-        margin-top: -150px;
     }
 
     .prev { 
-        transform: translateX(-60px) scale(0.75); 
-        opacity: 0.4;
+        transform: translate(-100%, -50%) scale(0.75); 
+        opacity: 0.2; 
     }
     .next { 
-        transform: translateX(60px) scale(0.75); 
-        opacity: 0.4;
-    }
-    
-    .active {
-        transform: translateX(0) scale(1.05);
+        transform: translate(0%, -50%) scale(0.75); 
+        opacity: 0.2; 
     }
 
-    .title-card { font-size: 1.1rem; }
-    .subtitle-card { font-size: 0.85rem; }
+    .active {
+        transform: translate(-50%, -50%) scale(1.1);
+        z-index: 20; 
+    }
+
+    .title-card { 
+        font-size: 1.1rem; 
+    }
+
+    .subtitle-card { 
+        font-size: 0.85rem; 
+    }
 
     .cycles {
         grid-template-columns: 1fr; 
